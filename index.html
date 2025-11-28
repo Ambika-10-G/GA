@@ -1,16 +1,16 @@
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MyShop | Home</title>
-<style>
-body { font-family: Arial; margin: 0; }
-nav { background:#f2f2f2; padding:10px; display:flex; gap:20px; justify-content:center; }
-nav a { text-decoration:none; color:#333; font-weight:bold; }
-.hero { padding:60px 20px; background:#eee; text-align:center; }
+.products { padding:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+.card { background:white; border:1px solid #ddd; padding:15px; border-radius:8px; text-align:center; }
+.card img { width:100%; height:220px; object-fit:cover; border-radius:6px; }
+.card button { background:#000; color:white; border:none; padding:10px 20px; margin-top:10px; cursor:pointer; border-radius:5px; }
+footer { background:#111; color:white; text-align:center; padding:15px; margin-top:20px; }
 </style>
 </head>
 <body>
+<header>
+<h1>FashionHub</h1>
+<p>Trendy • Affordable • Stylish</p>
+</header>
 <nav>
 <a href="index.html">Home</a>
 <a href="products.html">Products</a>
@@ -18,8 +18,36 @@ nav a { text-decoration:none; color:#333; font-weight:bold; }
 <a href="payment.html">Payment</a>
 </nav>
 <section class="hero">
-<h1>Welcome to MyShop</h1>
-<p>Your trusted online store.</p>
+<h2>Welcome to FashionHub</h2>
+<p>Shop the latest trends at the best prices!</p>
 </section>
+<section class="products">
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Floral Dress</h3>
+<p>₹899</p>
+<button onclick="location.href='products.html'">View</button>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Men's T‑Shirt</h3>
+<p>₹499</p>
+<button onclick="location.href='products.html'">View</button>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Blue Jeans</h3>
+<p>₹1299</p>
+<button onclick="location.href='products.html'">View</button>
+</div>
+</section>
+<footer>© 2025 FashionHub. All Rights Reserved.</footer>
+<script>
+// Simple JS Example: Show alert on page load
+window.addEventListener('load', () => {
+console.log('Page Loaded Successfully');
+});
+</script>
 </body>
 </html>
+
