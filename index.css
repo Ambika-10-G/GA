@@ -1,0 +1,10 @@
+body { margin:0; font-family:Arial, sans-serif; background:#fafafa; }
+nav { background:#f2f2f2; padding:12px; display:flex; justify-content:center; gap:25px; }
+nav a { text-decoration:none; font-weight:bold; color:#333; }
+header { background:#111; color:white; text-align:center; padding:20px; }
+.hero { background:#eee; padding:70px 20px; text-align:center; }
+.products { padding:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+.card { background:white; border:1px solid #ddd; padding:15px; border-radius:8px; text-align:center; }
+.card img { width:100%; height:220px; object-fit:cover; border-radius:6px; }
+.card button { background:#000; color:white; border:none; padding:10px 20px; margin-top:10px; cursor:pointer; border-radius:5px; }
+footer { background:#111; color:white; text-align:center; padding:15px; margin-top:20px; }
